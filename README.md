@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Chương trình Phân tích tính toán Hệ Giàn Phẳng 2D
 
 ## Giới thiệu
@@ -560,3 +561,7 @@ Giả sử người dùng tạo một hệ giàn phẳng gồm các nút, thanh,
 2. Ví dụ: templates.py
 
 README nguồn không cung cấp một bộ tọa độ, tải trọng và hình vẽ số cụ thể để xác lập một ví dụ tính toán có kết quả số; vì vậy phần này mô tả quy trình sử dụng thay vì tự đặt số liệu giả định.
+=======
+# 2D-Truss-Solver
+HCMUT Projects
+>>>>>>> 069e2b463c96fff84bed1eac4514f5cbd73457ef
