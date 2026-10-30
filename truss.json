@@ -1,0 +1,265 @@
+{
+  "units": {
+    "length": "m",
+    "force": "N",
+    "E": "1e9 Pa",
+    "A": "m2",
+    "density": "kg/m3"
+  },
+  "points": [
+    {
+      "id": "A",
+      "name": "A",
+      "x": 0.0,
+      "y": 0.0
+    },
+    {
+      "id": "K",
+      "name": "K",
+      "x": 2.0,
+      "y": 0.0
+    },
+    {
+      "id": "J",
+      "name": "J",
+      "x": 4.0,
+      "y": 0.0
+    },
+    {
+      "id": "I",
+      "name": "I",
+      "x": 6.0,
+      "y": 0.0
+    },
+    {
+      "id": "H",
+      "name": "H",
+      "x": 8.0,
+      "y": 0.0
+    },
+    {
+      "id": "G",
+      "name": "G",
+      "x": 10.0,
+      "y": 0.0
+    },
+    {
+      "id": "B",
+      "name": "B",
+      "x": 1.0,
+      "y": 3.0
+    },
+    {
+      "id": "C",
+      "name": "C",
+      "x": 3.0,
+      "y": 3.0
+    },
+    {
+      "id": "D",
+      "name": "D",
+      "x": 5.0,
+      "y": 3.0
+    },
+    {
+      "id": "E",
+      "name": "E",
+      "x": 7.0,
+      "y": 3.0
+    },
+    {
+      "id": "F",
+      "name": "F",
+      "x": 9.0,
+      "y": 3.0
+    }
+  ],
+  "members": [
+    {
+      "id": "AK",
+      "name": "AK",
+      "start_point": "A",
+      "end_point": "K",
+      "material": "M1"
+    },
+    {
+      "id": "AB",
+      "name": "AB",
+      "start_point": "A",
+      "end_point": "B",
+      "material": "M1"
+    },
+    {
+      "id": "BK",
+      "name": "BK",
+      "start_point": "B",
+      "end_point": "K",
+      "material": "M1"
+    },
+    {
+      "id": "BC",
+      "name": "BC",
+      "start_point": "B",
+      "end_point": "C",
+      "material": "M1"
+    },
+    {
+      "id": "KJ",
+      "name": "KJ",
+      "start_point": "K",
+      "end_point": "J",
+      "material": "M1"
+    },
+    {
+      "id": "KC",
+      "name": "KC",
+      "start_point": "K",
+      "end_point": "C",
+      "material": "M1"
+    },
+    {
+      "id": "CJ",
+      "name": "CJ",
+      "start_point": "C",
+      "end_point": "J",
+      "material": "M1"
+    },
+    {
+      "id": "CD",
+      "name": "CD",
+      "start_point": "C",
+      "end_point": "D",
+      "material": "M1"
+    },
+    {
+      "id": "JI",
+      "name": "JI",
+      "start_point": "J",
+      "end_point": "I",
+      "material": "M1"
+    },
+    {
+      "id": "JD",
+      "name": "JD",
+      "start_point": "J",
+      "end_point": "D",
+      "material": "M1"
+    },
+    {
+      "id": "DI",
+      "name": "DI",
+      "start_point": "D",
+      "end_point": "I",
+      "material": "M1"
+    },
+    {
+      "id": "DE",
+      "name": "DE",
+      "start_point": "D",
+      "end_point": "E",
+      "material": "M1"
+    },
+    {
+      "id": "IH",
+      "name": "IH",
+      "start_point": "I",
+      "end_point": "H",
+      "material": "M1"
+    },
+    {
+      "id": "IE",
+      "name": "IE",
+      "start_point": "I",
+      "end_point": "E",
+      "material": "M1"
+    },
+    {
+      "id": "EH",
+      "name": "EH",
+      "start_point": "E",
+      "end_point": "H",
+      "material": "M1"
+    },
+    {
+      "id": "EF",
+      "name": "EF",
+      "start_point": "E",
+      "end_point": "F",
+      "material": "M1"
+    },
+    {
+      "id": "HG",
+      "name": "HG",
+      "start_point": "H",
+      "end_point": "G",
+      "material": "M1"
+    },
+    {
+      "id": "HF",
+      "name": "HF",
+      "start_point": "H",
+      "end_point": "F",
+      "material": "M1"
+    },
+    {
+      "id": "FG",
+      "name": "FG",
+      "start_point": "F",
+      "end_point": "G",
+      "material": "M1"
+    }
+  ],
+  "materials": [
+    {
+      "id": "M1",
+      "name": "Steel",
+      "A": 0.001,
+      "E": 200.0,
+      "density": 7850.0
+    }
+  ],
+  "loads": [
+    {
+      "id": "P1",
+      "name": "P1",
+      "point": "B",
+      "Fx": 5000.0,
+      "Fy": 0.0
+    },
+    {
+      "id": "P2",
+      "name": "P2",
+      "point": "F",
+      "Fx": -3000.0,
+      "Fy": -4000.0
+    },
+    {
+      "id": "P3",
+      "name": "P3",
+      "point": "J",
+      "Fx": 0.0,
+      "Fy": -6000.0
+    },
+    {
+      "id": "P4",
+      "name": "P4",
+      "point": "H",
+      "Fx": 0.0,
+      "Fy": -6000.0
+    }
+  ],
+  "supports": [
+    {
+      "id": "S1",
+      "name": "Pin at A",
+      "point": "A",
+      "type": "pin"
+    },
+    {
+      "id": "S2",
+      "name": "Roller at G",
+      "point": "G",
+      "type": "roller_y"
+    }
+  ]
+}

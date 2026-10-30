@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Truss Analysis</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <h1 id="app-title">2D PLANAR TRUSS ANALYSIS</h1>
+      <p id="app-caption"></p>
+    </div>
+    <div class="controls">
+      <label><span id="lbl-language"></span>
+        <select id="language"></select></label>
+      <label><span id="lbl-template"></span>
+        <select id="template"></select></label>
+      <button id="btn-load-template" type="button"></button>
+      <button id="btn-open" type="button"></button>
+      <button id="btn-save" type="button"></button>
+      <input id="file-input" type="file" accept="application/json,.json" hidden>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="panel editor" aria-label="Input tables">
+      <nav class="tabs" id="tabs" role="tablist"></nav>
+      <div id="editor-body"></div>
+    </section>
+
+    <section class="panel stage" aria-label="Drawing">
+      <div class="stage-bar">
+        <button id="btn-back" type="button" hidden></button>
+        <div class="stage-title">
+          <strong id="stage-title"></strong>
+          <span id="stage-hint"></span>
+        </div>
+        <ul class="legend" id="legend"></ul>
+      </div>
+      <div class="canvas-wrap"><svg id="canvas" role="img" aria-label="Truss drawing"></svg></div>
+    </section>
+
+    <section class="panel results" aria-label="Results">
+      <div id="status" class="status"></div>
+      <ul id="issues" class="issues"></ul>
+      <div id="tables"></div>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
