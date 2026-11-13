@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Chương trình Phân tích tính toán Hệ Giàn Phẳng 2D
 
 ## Giới thiệu
@@ -564,4 +563,3 @@ README nguồn không cung cấp một bộ tọa độ, tải trọng và hình
 =======
 # 2D-Truss-Solver
 HCMUT Projects
->>>>>>> 069e2b463c96fff84bed1eac4514f5cbd73457ef
